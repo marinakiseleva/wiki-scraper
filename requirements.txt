@@ -1,0 +1,5 @@
+scrapy==1.2
+openpyxl==2.4
+lxml
+wikipedia==1.4
+twisted==16.6

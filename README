@@ -1,0 +1,26 @@
+Run the following commands to get set up:
+
+OPTIONAL ----------------------
+You can download the required libraries in a virtual enviornment, so the libraries are not installed globally: 
+$ virtualenv [whatever-name-you-choose]
+$ cd whatever-name-you-choose
+$ source bin/activate
+
+
+
+RUNNING ----------------------
+Run the required libraries.
+$ pip install -r requirements.txt
+
+Run the program:
+$ scrapy crawl wikicrawler -a title="Black_hole" -a workbook="empty.xlsx"
+
+If the workbook does not exist, the program will create it, otherwise it'll create a new sheet in the existing workbook. 
+Ensure that title is a real Wikipedia page title, as is seen in the URL, for example:
+https://en.wikipedia.org/wiki/Black_hole
+
+
+
+
+DEBUGGING ---------------------
+If you get a WebDriverException with the ChromeDriver, download the driver of the Chrome version you have already, from here: http://chromedriver.storage.googleapis.com/index.html, and place it into this directory.
